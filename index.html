@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بورتفوليو كريم طارق مرزوق</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0f7fa, #fff);
+            color: #333;
+            transition: background 0.5s ease;
+            overflow-x: hidden;
+        }
+        header {
+            background: #2980b9;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            margin: 15px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #f39c12;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            animation: fadeIn 1s forwards;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #f39c12;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2980b9;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            font-size: 24px;
+            color: #2980b9;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #f39c12;
+        }
+        .contact-form {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #2980b9;
+        }
+        /* إضافة تأثيرات حركة */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* تصميم متجاوب */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            footer {
+                flex-direction: column;
+                font-size: 14px;
+            }
+        }
+        /* تصميم للأيقونات والتذييل */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .footer-icons a {
+            font-size: 20px;
+            color: white;
+        }
+        .footer-icons a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kareem Tarek Mohamed Marzouk</h1>
+    <nav>
+        <a href="#objective">الهدف</a>
+        <a href="#skills">المهارات</a>
+        <a href="#experience">الخبرة</a>
+        <a href="#education">التعليم</a>
+        <a href="#certifications">الشهادات</a>
+        <a href="#social">التواصل</a>
+        <a href="#contact" onclick="toggleContactForm()">اتصل بي</a>
+    </nav>
+</header>
+
+<a href="https://wa.me/201000889309" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); text-align: center; font-size: 24px; z-index: 1000;">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<div class="container animate__animated animate__fadeIn">
+    <h2 id="objective">Objective</h2>
+    <p>Experienced System Administrator with 2 years of expertise in server administration, network management, cloud computing, and cybersecurity. Proactive problem solver committed to ensuring IT system reliability. Dedicated to staying updated on industry trends and enhancing skills.</p>
+
+    <h2 id="skills">Skills</h2>
+    <ul>
+        <li>Server Administration: Windows Server 2012R2</li>
+        <li>Network Configuration: Cisco Catalyst 3560, 6500 series</li>
+        <li>Cybersecurity: Network Security Control, DevOps, Python</li>
+        <li>Operating Systems: Windows, Linux</li>
+        <li>Scripting & Automation: Python</li>
+        <li>Troubleshooting & Problem-Solving</li>
+        <li>Cloud Computing: Azure</li>
+        <li>Certifications: CCNA</li>
+    </ul>
+
+    <h2 id="experience">Work Experience</h2>
+    <h3>Technical Support | WE | Nasr City</h3>
+    <p>Resolved technical issues with ADSL accounts, reducing call handling time and enhancing customer satisfaction.</p>
+    <h3>System Administrator | Misr Phosphate | Nasr City</h3>
+    <p>Managed system maintenance, updates, and backups to optimize performance and security.</p>
+
+    <h2 id="education">Education</h2>
+    <p>Bachelor’s Degree in Management Information Systems with distinguished academic performance.</p>
+
+    <h2 id="certifications">Certifications</h2>
+    <ul>
+        <li>CCNA (200-301)</li>
+        <li>Introduction to Cybersecurity</li>
+        <li>Protect Systems from Penetrations</li>
+        <li>Introduction to Artificial Intelligence</li>
+        <li>Network Layer Addressing and Subnetting</li>
+        <li>Python Programming Basics</li>
+        <li>Knowledge Enhancement Certificate</li>
+        <li>Digital Marketing Training Certificate</li>
+        <li>Python (Basics) Certificate</li>
+        <li>English Language (8 Levels) Certificate</li>
+        <li>Leadership Training Program Certificate</li>
+    </ul>
+
+    <h2 id="social">Social Media & Portfolio</h2>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/kareem_tarek_marouk/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.behance.net/kareemmarzouk1" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="https://w3xsite.wordpress.com/" target="_blank"><i class="fas fa-globe"></i></a>
+        <a href="https://www.facebook.com/kareemtarekmarzouk" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://t.me/kareemtarekmarzouk" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Kareem Tarek Mohamed Marzouk. All Rights Reserved.</p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/kareem_tarek_marouk/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/kareemmarzouk1" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://w3xsite.wordpress.com/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://www.facebook.com/kareemtarekmarzouk" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me/kareemtarekmarzouk" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- نموذج الاتصال الذي يفتح عند النقر على "اتصل بي" -->
+<div class="contact-form" id="contactForm">
+    <h3>اتصل بي</h3>
+    <form action="mailto:kareemtarek@example.com" method="POST">
+        <input type="text" name="name" placeholder="اسمك" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</div>
+
+<script>
+    function toggleContactForm() {
+        var form = document.getElementById('contactForm');
+        if (form.style.display === 'none' || form.style.display === '') {
+            form.style.display = 'block';
+        } else {
+            form.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
